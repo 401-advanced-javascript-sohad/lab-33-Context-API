@@ -1,9 +1,7 @@
 import React from 'react';
-import Header from './components/header.js';
-// import Main from './components/main.js';
-// import Todo from './components/todo.js';
-import Todo from './components/todo-connected.js';
-import Footer from './components/footer.js';
+import Header from '../src/components/modal/header.js';
+import Todo from '../src/components/todo/todo-connected.js';
+import Footer from './components/modal/footer.js';
 
 
 function App() {

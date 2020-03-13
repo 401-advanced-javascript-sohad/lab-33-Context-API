@@ -1,0 +1,252 @@
+body {
+    background-image: url('https://i.gifer.com/8v6x.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1400px 2000px;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding:0;
+    width: 100%;
+}
+
+
+h3{
+    margin-left: 570px;
+    color: darkblue;
+     }
+
+.todo-details {
+    display: inline-block;
+    flex-direction: row;
+
+    header {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        padding:.5em 1em;
+    }
+
+    .item {
+        flex:1;
+        padding: 1em;
+    }
+
+}
+h1{
+    margin-left:50px;
+    margin-top: 50px; 
+    text-align: center;
+   
+ 
+
+
+}
+
+
+footer{
+    margin-left:50px;
+    margin-top: 50px; 
+
+}
+
+.todo {
+
+    display: inline-block;
+    flex-direction:row;
+    justify-content: flex-start;
+    margin-left: 50px;
+
+    form {
+        text-align: center;
+        margin-right: 2em;
+        margin-left: 500px;
+        label {
+            display: flex;
+            flex-direction:column;
+            margin-bottom: 1em;
+
+            input{
+                position: relative;
+                width: 300px;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                &:hover {
+                    background: rgb(204, 202, 202);
+                    color: black
+                }
+            }
+        }
+
+        #add{
+            display: inline-block;
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            background-color:rgb(231, 209, 209) ;
+            &:hover {
+                background: rgb(22, 1, 1);
+                color: white
+            }
+        }
+    }
+
+
+
+    ul {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        display: inline-block;
+        margin-top: 300px;
+        margin-left: 500px;
+
+
+        li {
+            display: inline-block;
+
+            align-items: center;
+            display:flex;
+            flex-direction:row;
+            font-size: .75em;
+            margin: .75em .5em;
+
+            &.complete-true {
+              span {
+                background: pink;
+                text-decoration:line-through;
+                &:hover {
+                   background: seagreen;
+                }
+              }
+            }
+
+
+            span {
+                background: #e0e0e0;
+                cursor:pointer;
+                &:hover {
+                    background: pink;
+                }
+            }
+
+         
+             span, input {
+                 border: .5px solid #eee;
+                 display:inline-block;
+                 padding: .2em .25em;
+                 width: 200px;
+                 height: 20px;
+                 font-size: 20px;
+             }
+
+            button {
+                background: transparent;
+                border:none;
+                color:rgb(65, 65, 66);
+                cursor:pointer;
+                padding:0;
+                margin: 0 .75em;
+                font-size: 20px;
+
+            }
+
+        }
+    }
+
+}
+.allModel{
+    display: inline-block;
+
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 100px; 
+        left: 0;
+        top: 0;    
+        overflow: auto;        
+        margin-left: 30%;
+      
+}
+.modal{
+    display: inline-block;
+
+background-color: gray;
+border: solid;
+width: 500px;
+height: 250px;
+font-size: 20px;
+text-align: center;
+header{
+    span {
+        margin-right: 50px;
+     }
+}
+.modalDet{
+    font-size: 30px;
+}
+}
+
+.modalDet{
+ padding: 50px;
+
+}
+.title{
+    font-size: 20px;
+}
+.close{
+margin-left: 387px;
+border: none;
+background-color: rgb(59, 55, 55);
+font-size: 20px;
+&:hover {
+    background: rgb(18, 190, 233);
+}
+
+}
+
+.bar{
+    
+    z-index: 1;  
+    left: 0;
+    top: 0;    
+    overflow: auto;        
+    margin-left: 47%;
+    position: absolute;
+    margin-top: 650px;
+    text-align: center;
+
+
+    
+}
+.pages{
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.button{
+    // background: transparent;
+    // border:nonse;
+    color:rgb(0, 0, 10);
+    cursor:pointer;
+    padding:0;
+    margin: 0 .75em;
+    font-size: 20px;
+    &:hover {
+        background: black;
+        color: wheat;
+    }
+}
+
+footer{
+    text-align: center;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 0, 0);
+}
